@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/Diferencia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/Diferencia_Simetrica.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/Interseccion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Operaciones Basicas/Union.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
