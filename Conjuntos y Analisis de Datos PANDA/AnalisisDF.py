@@ -125,7 +125,7 @@ def ejecutar_opcion(opcion, df):
 def main():
     np.random.seed(0)
 
-    categorias = ['Presión Arterial', 'Colesterol', 'Glucosa', 'Peso', 'Altura']
+    categorias = ['Presión Sistólica', 'Presión Diastólica', 'Colesterol', 'Glucosa', 'Peso', 'Altura']
 
     pacientes = [f'Paciente_{i + 1}' for i in range(50)]
 

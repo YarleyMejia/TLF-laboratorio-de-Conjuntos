@@ -1,14 +1,16 @@
-def diferencia(conjuntoA, conjuntoB):
-    resultado= conjuntoA-conjuntoB
+def interseccion(conjuntoA, conjuntoB):
+    resultado = []
+    for elemento in conjuntoA:
+        if elemento in conjuntoB:
+            resultado.append(elemento)
+    return resultado
 
-    return resultado;
 def main():
+    conjunto_A = ["Juan", "Carlos", "Pedro", 4]
+    conjunto_B = ["Juan", 4, 5, 2]
 
-    conjunto_A = {"Juan", "Carlos", "Pedro", 4}
-    conjunto_B = {"Juan", 4, 5, 2}
+    resultado = interseccion(conjunto_A, conjunto_B)
 
-    resultado = diferencia(conjunto_A, conjunto_B)
-
-    print("Diferencia de A - B:", resultado)
+    print("Intersección de A y B:", resultado)
 
 main()
