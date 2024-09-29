@@ -18,6 +18,8 @@ def union_listas(lista_A, lista_B):
             union.append(elemento)
     return union
 
+
+
 def main():
 
     conjunto_A = ["a", "b", "c"]
