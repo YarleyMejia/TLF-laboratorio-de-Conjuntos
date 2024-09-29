@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF_N2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/Union.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/Union.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF_N1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +48,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.AnalisisDF.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Diferencia_Simetrica.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Interseccion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SubConjuntos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SuperConjuntos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Union.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;YarleyMejia&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.AnalisisDF.executor": "Run",
+    "Python.AnalisisDF_N2.executor": "Run",
+    "Python.AnalisisTest.executor": "Run",
+    "Python.Diferencia_Simetrica.executor": "Run",
+    "Python.Interseccion.executor": "Run",
+    "Python.SubConjuntos.executor": "Run",
+    "Python.SuperConjuntos.executor": "Run",
+    "Python.Union.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "YarleyMejia"
   }
-}</component>
-  <component name="RunManager" selected="Python.Interseccion">
-    <configuration name="AnalisisDF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\PYTHON\TLF laboratorio de Conjuntos\Base de Datos SIMULA" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.AnalisisDF_N2">
+    <configuration name="AnalisisDF_N1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TLF laboratorio de Conjuntos" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +82,51 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\lenovo\Desktop\PYTHON\TLF laboratorio de Conjuntos\Conjuntos y Analisis de Datos PANDA\AnalisisDF_N1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AnalisisDF_N2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TLF laboratorio de Conjuntos" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF_N2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="AnalisisTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TLF laboratorio de Conjuntos" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Analisis de BD-SIMULA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,57 +179,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SuperConjuntos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TLF laboratorio de Conjuntos" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Operaciones Basicas" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Union" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TLF laboratorio de Conjuntos" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Operaciones Basicas" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Operaciones Basicas/Union.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AnalisisDF_N2" />
+        <item itemvalue="Python.AnalisisTest" />
         <item itemvalue="Python.Interseccion" />
         <item itemvalue="Python.SubConjuntos" />
-        <item itemvalue="Python.AnalisisDF" />
-        <item itemvalue="Python.SuperConjuntos" />
-        <item itemvalue="Python.Union" />
+        <item itemvalue="Python.AnalisisDF_N1" />
       </list>
     </recent_temporary>
   </component>
@@ -199,5 +206,8 @@
       <updated>1725829774722</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
