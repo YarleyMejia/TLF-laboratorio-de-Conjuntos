@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF_N2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF_N1.py" afterDir="false" />
-    </list>
+    <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +49,7 @@
     "Python.AnalisisDF.executor": "Run",
     "Python.AnalisisDF_N2.executor": "Run",
     "Python.AnalisisTest.executor": "Run",
+    "Python.AnalisisTest_N2.executor": "Run",
     "Python.Diferencia_Simetrica.executor": "Run",
     "Python.Interseccion.executor": "Run",
     "Python.SubConjuntos.executor": "Run",

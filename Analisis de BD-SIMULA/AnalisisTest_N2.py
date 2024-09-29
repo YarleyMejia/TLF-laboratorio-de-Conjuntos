@@ -51,7 +51,7 @@ def dispersion(dataFrame):
     plt.show()
 
 def main():
-    excelPath = r"C:\Users\lenovo\Desktop\PYTHON\SIMULA(respuestas).xlsx"
+    excelPath = r"SIMULA(respuestas).xlsx"
     dataFrame = load_data(excelPath)
 
     root = tk.Tk()
