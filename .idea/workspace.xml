@@ -7,7 +7,9 @@
     <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/Diferencia.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/Diferencia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/SuperConjuntos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Operaciones Basicas/Union.py" beforeDir="false" afterPath="$PROJECT_DIR$/Operaciones Basicas/Union.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,18 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.AnalisisDF.executor": "Run",
-    "Python.Diferencia_Simetrica.executor": "Run",
-    "Python.Interseccion.executor": "Run",
-    "Python.SubConjuntos.executor": "Run",
-    "Python.SuperConjuntos.executor": "Run",
-    "Python.Union.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "YarleyMejia"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.AnalisisDF.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Diferencia_Simetrica.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Interseccion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SubConjuntos.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SuperConjuntos.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Union.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;YarleyMejia&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Interseccion">
     <configuration name="AnalisisDF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TLF laboratorio de Conjuntos" />
@@ -174,9 +176,9 @@
       <list>
         <item itemvalue="Python.Interseccion" />
         <item itemvalue="Python.SubConjuntos" />
+        <item itemvalue="Python.AnalisisDF" />
         <item itemvalue="Python.SuperConjuntos" />
         <item itemvalue="Python.Union" />
-        <item itemvalue="Python.AnalisisDF" />
       </list>
     </recent_temporary>
   </component>
