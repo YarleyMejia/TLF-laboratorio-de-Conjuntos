@@ -44,7 +44,7 @@ def unirColumnasSets(dataFrame, col1, col2, nueva_columna):
     """
     if col1 not in dataFrame.columns or col2 not in dataFrame.columns:
         print(f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame.")
-        return dataFrame  # Return the original DataFrame if there's an error
+        return dataFrame
 
     unique_values_col1 = list(set(dataFrame[col1].dropna()))
     unique_values_col2 = list(set(dataFrame[col2].dropna()))
@@ -52,7 +52,6 @@ def unirColumnasSets(dataFrame, col1, col2, nueva_columna):
     union_values = list(set(unique_values_col1) | set(unique_values_col2))
 
     if len(union_values) < len(dataFrame):
-        # Create a list filled with NaN and the unique values
         result = union_values + [np.nan] * (len(dataFrame) - len(union_values))
     else:
         result = union_values[:len(dataFrame)]
@@ -95,35 +94,6 @@ def nombreColumnas(dataFrame):
     """
     cantidad = dataFrame.columns.tolist()
     return cantidad
-
-
-def unirColumnas(dataFrame, col1, col2, nueva_columna):
-    """
-    Unites the data from two columns into one and adds it as a new column in the DataFrame,
-    ensuring unique values.
-
-    Parameters:
-    dataFrame (pandas.DataFrame): The DataFrame containing the columns.
-    col1 (str): The name of the first column.
-    col2 (str): The name of the second column.
-    nueva_columna (str): The name of the new column where combined data will be stored.
-
-    Returns:
-    pandas.DataFrame: The DataFrame with the new column added.
-    """
-    # Comprobar si las columnas existen
-    if col1 not in dataFrame.columns or col2 not in dataFrame.columns:
-        print(f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame.")
-        return dataFrame  # Retorna el DataFrame original si hay error
-
-    # Obtener valores únicos de ambas columnas y eliminar NaN
-    unique_values = set(dataFrame[col1].dropna()).union(set(dataFrame[col2].dropna()))
-
-    # Crear la nueva columna con los valores únicos como lista
-    dataFrame[nueva_columna] = [list(unique_values)] * len(dataFrame)  # Repite la lista para cada fila
-
-    # Devolver solo el DataFrame con la nueva columna
-    return dataFrame[[col1, col2, nueva_columna]]
 
 
 def tipoDatos(dataFrame):
