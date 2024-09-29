@@ -28,10 +28,10 @@ def ultimaFila(dataFrame):
     return ultimas
 
 
-def unirColumnas(dataFrame, col1, col2, nueva_columna):
+def unirColumnasSets(dataFrame, col1, col2, nueva_columna):
     """
-    Unites the data from two columns into one and adds it as a new column in the DataFrame,
-    displaying unique values vertically.
+    Unites the unique elements from two columns into a new column in the DataFrame
+    using set union, ensuring no duplicate values and filling remaining rows with NaN.
 
     Parameters:
     dataFrame (pandas.DataFrame): The DataFrame containing the columns.
@@ -40,14 +40,33 @@ def unirColumnas(dataFrame, col1, col2, nueva_columna):
     nueva_columna (str): The name of the new column where combined data will be stored.
 
     Returns:
-    pandas.DataFrame: A DataFrame containing only the new column with unique values combined vertically.
+    pandas.DataFrame: The DataFrame with the new column added.
     """
-    if col1 in dataFrame.columns and col2 in dataFrame.columns:
+    # Check if the columns exist
+    if col1 not in dataFrame.columns or col2 not in dataFrame.columns:
+        print(f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame.")
+        return dataFrame  # Return the original DataFrame if there's an error
 
-        dataFrame[nueva_columna] = elementos_unicos(dataFrame,col1).union(elementos_unicos(dataFrame,col2))
-        return seleccionarColumna(dataFrame, nueva_columna)
+    # Get unique values from both columns and remove NaN
+    unique_values_col1 = list(set(dataFrame[col1].dropna()))
+    unique_values_col2 = list(set(dataFrame[col2].dropna()))
+
+    # Perform union of the two sets and convert to a list
+    union_values = list(set(unique_values_col1) | set(unique_values_col2))
+
+    # Fill the new column with unique values and NaN if not enough unique values
+    if len(union_values) < len(dataFrame):
+        # Create a list filled with NaN and the unique values
+        result = union_values + [np.nan] * (len(dataFrame) - len(union_values))
     else:
-        return f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame."
+        # If there are enough unique values, just take the first len(dataFrame)
+        result = union_values[:len(dataFrame)]
+
+    # Assign the result to the new column
+    dataFrame[nueva_columna] = result
+
+    # Return the DataFrame with the new column
+    return dataFrame
 
 def cantidadElements(dataFrame):
     """
@@ -283,7 +302,7 @@ def ejecutar_opcion(opcion, df):
         col1 = simpledialog.askstring("Entrada", "Ingrese el nombre de la primera columna a unir:")
         col2 = simpledialog.askstring("Entrada", "Ingrese el nombre de la segunda columna a unir:")
         nueva_columna = simpledialog.askstring("Entrada", "Ingrese el nombre de la nueva columna:")
-        resultado = unirColumnas(df, col1, col2, nueva_columna)
+        resultado = unirColumnasSets(df, col1, col2, nueva_columna)
     elif opcion == '7':
         nombreCol = simpledialog.askstring("Entrada", "Ingrese el nombre de la columna:")
         resultado = seleccionarColumna(df, nombreCol)
