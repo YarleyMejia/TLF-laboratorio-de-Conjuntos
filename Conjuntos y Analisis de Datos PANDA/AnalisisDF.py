@@ -27,6 +27,23 @@ def ultimaFila(dataFrame):
     ultimas = dataFrame.tail()
     return ultimas
 
+def unirColumnas(dataFrame, col1, col2, nueva_columna):
+    """
+    Unites the data from two columns into one and adds it as a new column in the DataFrame.
+    Parameters:
+    dataFrame (pandas.DataFrame): The DataFrame containing the columns.
+    col1 (str): The name of the first column.
+    col2 (str): The name of the second column.
+    nueva_columna (str): The name of the new column where combined data will be stored.
+    Returns:
+    pandas.DataFrame: The DataFrame with the new column added.
+    """
+    if col1 in dataFrame.columns and col2 in dataFrame.columns:
+        dataFrame[nueva_columna] = dataFrame[col1].astype(str) + " / " + dataFrame[col2].astype(str) + " mm/hg"
+        return seleccionarColumna(dataFrame, nueva_columna)
+    else:
+        return f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame."
+
 
 def cantidadElements(dataFrame):
     """
@@ -74,18 +91,6 @@ def tipoDatos(dataFrame):
     """
     tipo = dataFrame.dtypes
     return tipo
-
-
-def resumenDatos(dataFrame):
-    """
-    Returns a statistical summary of the DataFrame.
-    Parameters:
-    dataFrame (pandas.DataFrame): The DataFrame to summarize.
-    Returns:
-    pandas.DataFrame: A DataFrame with statistics such as mean, standard deviation, etc.
-    """
-    resumen = dataFrame.describe()
-    return resumen
 
 
 def agruparPorCantidad(dataFrame, cantidad, nombreCol):
@@ -241,10 +246,11 @@ def ejecutar_opcion(opcion, df):
         resultado = nombreColumnas(df)
     elif opcion == '5':
         resultado = tipoDatos(df)
-    elif opcion == '6':
-        nombreCol = simpledialog.askstring("Entrada", "Ingrese el nombre de la columna:")
-        cantidad = simpledialog.askinteger("Entrada", "Ingrese el valor de cantidad:")
-        resultado = agruparPorCantidad(df, cantidad, nombreCol)
+    elif opcion == '6':  # Nueva opción para unir columnas
+        col1 = simpledialog.askstring("Entrada", "Ingrese el nombre de la primera columna a unir:")
+        col2 = simpledialog.askstring("Entrada", "Ingrese el nombre de la segunda columna a unir:")
+        nueva_columna = simpledialog.askstring("Entrada", "Ingrese el nombre de la nueva columna:")
+        resultado = unirColumnas(df, col1, col2, nueva_columna)
     elif opcion == '7':
         nombreCol = simpledialog.askstring("Entrada", "Ingrese el nombre de la columna:")
         resultado = seleccionarColumna(df, nombreCol)
@@ -348,7 +354,7 @@ def main():
                                         "3: Cantidad de filas y columnas\n"
                                         "4: Nombres de las columnas\n"
                                         "5: Tipos de datos\n"
-                                        "6: Agrupar por cantidad en 'Peso'\n"
+                                        "6: Unir dos columnas\n"
                                         "7: Seleccionar columna\n"
                                         "8: Seleccionar filas\n"
                                         "9: Verificar datos únicos en una columna\n"

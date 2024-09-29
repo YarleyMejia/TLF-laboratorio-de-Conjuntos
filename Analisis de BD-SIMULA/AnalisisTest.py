@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-excelPath = r"C:\Users\lenovo\Desktop\PYTHON\SIMULA(respuestas).xlsx"
+excelPath = r"SIMULA(respuestas).xlsx"
 dataFrame = pd.read_excel(excelPath, "T")
 
 

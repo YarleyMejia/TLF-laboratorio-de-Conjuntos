@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="" />
+    <list default="true" id="0b58d542-3fb5-4c7a-aab4-f2ae22566fce" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest_N2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis de BD-SIMULA/AnalisisTest_N2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +69,29 @@
       <recent name="C:\Users\lenovo\Desktop\PYTHON\TLF laboratorio de Conjuntos\Base de Datos SIMULA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.AnalisisTest_N2">
+  <component name="RunManager" selected="Python.AnalisisDF">
+    <configuration name="AnalisisDF" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TLF laboratorio de Conjuntos" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conjuntos y Analisis de Datos PANDA/AnalisisDF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="AnalisisDF_N2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TLF laboratorio de Conjuntos" />
       <option name="ENV_FILES" value="" />
@@ -153,35 +180,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SubConjuntos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TLF laboratorio de Conjuntos" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Operaciones Basicas" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Operaciones Basicas/SubConjuntos.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AnalisisDF" />
         <item itemvalue="Python.AnalisisTest_N2" />
-        <item itemvalue="Python.AnalisisDF_N2" />
         <item itemvalue="Python.AnalisisTest" />
+        <item itemvalue="Python.AnalisisDF_N2" />
         <item itemvalue="Python.Interseccion" />
-        <item itemvalue="Python.SubConjuntos" />
       </list>
     </recent_temporary>
   </component>

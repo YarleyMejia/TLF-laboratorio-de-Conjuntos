@@ -1,17 +1,15 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from tkinter import simpledialog, Tk
+from tkinter import simpledialog
 import tkinter as tk
 
 
-def load_data(file_path):
-    """Cargar el archivo Excel y devolver el DataFrame."""
-
+def cargarData(file_path):
+    """Load the Excel file and return the DataFrame."""
     return pd.read_excel(file_path, "T")
 
-
 def columnas(dataFrame):
-    """Graficar la distribución de puntuaciones como un gráfico de columnas."""
+    """Plot the distribution of scores as a bar chart."""
     puntuacion = dataFrame['Puntuación']
     puntuacion_counts = puntuacion.value_counts()
 
@@ -27,17 +25,19 @@ def columnas(dataFrame):
 
 
 def torta(dataFrame):
-    palabraClave = dataFrame['En SIMULA, ¿qué palabra clave se utiliza para definir una clase?']
-    palabraClave_counts = palabraClave.value_counts()
-
+    """Plot a pie chart showing the distribution of responses to a question"""
+    columnaAnalizada = dataFrame['En SIMULA, ¿qué palabra clave se utiliza para definir una clase?']
+    columnaAnalizada_counts = columnaAnalizada.value_counts()
     plt.figure(figsize=(8, 8))
-    palabraClave_counts.plot(kind='pie', autopct='%1.1f%%', startangle=90, colors=['#99ff99', '#ff6666', '#99ff98'])
+    columnaAnalizada_counts.plot(kind='pie', autopct='%1.1f%%', startangle=90, colors=['#99ff99', '#ff6666', '#99ff98'])
     plt.title('En SIMULA, ¿qué palabra clave se utiliza para definir una clase?')
-    plt.ylabel('')  # Para quitar la etiqueta del eje y
+    plt.xlabel('DIAGRAMA DE TORTA')
+    plt.ylabel('')
     plt.show()
 
 
 def dispersion(dataFrame):
+    """Plot a scatter plot """
     x_column = dataFrame['¿Qué tipo de estructura de datos se utiliza en SIMULA para implementar una lista enlazada?']
     y_column = range(len(x_column))
     plt.figure(figsize=(7, 4))
@@ -52,7 +52,7 @@ def dispersion(dataFrame):
 
 def main():
     excelPath = r"SIMULA(respuestas).xlsx"
-    dataFrame = load_data(excelPath)
+    dataFrame = cargarData(excelPath)
 
     root = tk.Tk()
     root.withdraw()
