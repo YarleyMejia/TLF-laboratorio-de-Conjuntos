@@ -42,30 +42,23 @@ def unirColumnasSets(dataFrame, col1, col2, nueva_columna):
     Returns:
     pandas.DataFrame: The DataFrame with the new column added.
     """
-    # Check if the columns exist
     if col1 not in dataFrame.columns or col2 not in dataFrame.columns:
         print(f"Una o ambas columnas '{col1}' y '{col2}' no se encuentran en el DataFrame.")
         return dataFrame  # Return the original DataFrame if there's an error
 
-    # Get unique values from both columns and remove NaN
     unique_values_col1 = list(set(dataFrame[col1].dropna()))
     unique_values_col2 = list(set(dataFrame[col2].dropna()))
 
-    # Perform union of the two sets and convert to a list
     union_values = list(set(unique_values_col1) | set(unique_values_col2))
 
-    # Fill the new column with unique values and NaN if not enough unique values
     if len(union_values) < len(dataFrame):
         # Create a list filled with NaN and the unique values
         result = union_values + [np.nan] * (len(dataFrame) - len(union_values))
     else:
-        # If there are enough unique values, just take the first len(dataFrame)
         result = union_values[:len(dataFrame)]
 
-    # Assign the result to the new column
     dataFrame[nueva_columna] = result
 
-    # Return the DataFrame with the new column
     return dataFrame
 
 def cantidadElements(dataFrame):
